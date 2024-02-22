@@ -3,6 +3,9 @@ module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
     extend: {
+      gridTemplateRows: {
+        test: "min-content 1fr",
+      },
       colors: {
         "primary-tomato": "hsl(4, 100%, 67%)",
         "neutral-dark-slate-grey": "hsl(234, 29%, 20%)",
@@ -14,7 +17,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("tailwind-fontawesome"),
-  ],
+  plugins: [require("tailwind-fontawesome")],
 };

@@ -25,17 +25,26 @@
 
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="min-h-screen bg-primary-Tomato font-rob">
+  <body
+    class="min-h-screen bg-primary-Tomato font-rob bg-neutral-dark-slate-grey sm:grid sm:place-items-center"
+  >
     <main>
-      <div class="container">
+      <div
+        class="container bg-white min-h-screen grid grid-rows-test sm:flex sm:flex-row-reverse sm:min-h-40 sm:rounded-3xl"
+      >
         <div class="signup-image">
           <img
-            class="w-full max-w-4xl"
+            class="w-full h-[40vh] object-cover sm:hidden"
             src="/assets/images/illustration-sign-up-mobile.svg"
             alt="signup-background"
           />
+          <img
+            class="hidden sm:block p-3 h-full object-cover object-"
+            src="/assets/images/illustration-sign-up-desktop.svg"
+            alt=""
+          />
         </div>
-        <div class="subscription p-8 grid gap-6">
+        <div class="subscription p-8 grid sm:p-14 sm:content-center sm:gap-6">
           <h1 class="text-neutral-dark-slate-grey text-4xl font-bold">
             Stay updated!
           </h1>
@@ -90,21 +99,24 @@
             </button>
           </form>
         </div>
-        <div class="hidden success h-screen p-8 flex flex-col">
+        <div
+          class="hidden success h-screen p-8 flex flex-col sm:h-auto sm:max-w-md sm:gap-8"
+        >
           <div class="sucess-msg grid gap-7 mt-auto">
             <i
               class="fa-solid fa-circle-check text-6xl"
               style="color: #fd6357"
             ></i>
             <h2
-              class="text-neutral-dark-slate-grey font-bold text-4xl max-w-xs"
+              class="text-neutral-dark-slate-grey font-bold text-4xl max-w-xs sm:max-w-xs sm:text-5xl"
             >
               Thanks for subscribing!
             </h2>
             <p class="text-neutral-charcoal-grey">
               A confirmation email has been sent to
-              <span class="font-bold">email@company.com</span>. Please open it
-              and click the button inside to confirm your subscription.
+              <span class="success-email font-bold">email@company.com</span>.
+              Please open it and click the button inside to confirm your
+              subscription.
             </p>
           </div>
           <button

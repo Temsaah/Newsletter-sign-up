@@ -6,6 +6,7 @@ let signupImage = document.querySelector(".signup-image");
 let subscription = document.querySelector(".subscription");
 let successMsg = document.querySelector(".success");
 let dismissBtn = document.querySelector(".dismiss-btn");
+let successEmail = document.querySelector(".success-email");
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
@@ -13,6 +14,7 @@ submit.addEventListener("click", (e) => {
     signupImage.classList.add("hidden");
     subscription.classList.add("hidden");
     successMsg.classList.remove("hidden");
+    successEmail.innerHTML = input.value;
   }
 });
 
@@ -22,3 +24,7 @@ dismissBtn.addEventListener("click", () => {
   subscription.classList.remove("hidden");
   successMsg.classList.add("hidden");
 });
+
+let array = [];
+
+array.slice();
